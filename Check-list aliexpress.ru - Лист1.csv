@@ -1,0 +1,32 @@
+Build,,
+Environment,"Windows 10 Home basic, Firefox browser 94.0.2",
+Test date,05.12.2021,
+Tester,,
+Test type,Cheching,Result
+Registration,,
+Smoke,"Clicking the ""register"" button opens the registration window",yes
+Smoke,"Clicking the ""register by Email"" button opens the registration window",yes
+Smoke,"Clicking the ""register by SMS"" button returns us back to the registration window",yes
+CTR,"Field ""Phone number"" allows to enter only numbers",yes
+CTR,"Clicking the ""send code via SMS"" button sends a code to a phone number",yes
+CTR,"Clicking the ""send code via SMS"" button with an empty field ""phone number"" we see the inscription ""enter the phone number"" ",yes
+Login,,
+Smoke,"Clicking the ""Login"" button opens the Login window",yes
+CTR,"Clicking the ""Login"" button with an empty fields ""e-mail adress"" and ""Password"" we see that nothing is happening",yes
+CTR,"Clicking the ""Login"" button with an right-filled fields ""e-mail adress"" and ""password"" we see that site is opens",yes
+CTR,"Clicking the ""Login"" button with an wrong-filled fields ""e-mail adress"" and ""password"" we see thу inscription ""Your account name or password is incorrect""",yes
+CTR,"Clicking the ""Login with social networks"" button opens the new tab with authorization request",yes
+Searching,,
+CTR,"By entering any word into the search bar and pressing the search button, we get the search results ",yes
+EXT,"By entering any number into the search bar and pressing the search button, we see the inscription ""Sorry, we did not find any items for your search ""876845340654350"". Please try searching again.""",yes
+Navigation by category,,
+CTR,"If we hover the mouse cursor over the ""category"" icon we see a pop-up window with a list of categories",yes
+CTR,"By clicking on one of the categories in the list, we get to the page with products",yes
+Basket,,
+CTR,"Clicking on the ""Cart"" button opens a list of products added to the cart",yes
+CTR,Clicking on the product icon opens the product description page,yes
+CTR,"Сlicking on the ""Select All"" button, all products in the basket are selected",yes
+Checkout,,
+CTR,"clicking on the ""buy"" button, the order form window opens.",yes
+CTR,"clicking on the ""Add address"" button a window pops up with a form for filling out the address",yes
+CTR,"Clicking the ""Checkout"" button opens the payment page",yes
